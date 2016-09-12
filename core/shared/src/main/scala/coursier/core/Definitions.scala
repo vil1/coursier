@@ -61,10 +61,7 @@ final case class Dependency(
 final case class Attributes(
   `type`: String,
   classifier: String
-) {
-  def publication(name: String, ext: String): Publication =
-    Publication(name, `type`, ext, classifier)
-}
+)
 
 final case class Project(
   module: Module,
