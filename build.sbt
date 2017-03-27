@@ -573,9 +573,9 @@ lazy val releaseSettings = Seq(
     </developers>
   },
   publishTo := {
-    val nexus = "https://oss.sonatype.org/"
+    val nexus = "https://art.ebiznext.com/artifactory/"
     if (isSnapshot.value)
-      Some("snapshots" at nexus + "content/repositories/snapshots")
+      Some("snapshots" at nexus + "libs-snapshots-local")
     else
       Some("releases"  at nexus + "service/local/staging/deploy/maven2")
   },
